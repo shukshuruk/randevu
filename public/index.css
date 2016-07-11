@@ -1,3 +1,101 @@
-.active {
-  color: green;
+body {
+    margin: 0;
+}
+
+audio {
+    width: 200px;
+}
+
+.content {
+    flex: 1;
+    background: url(main.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+}
+
+.stateicon {
+    margin: auto;
+}
+
+#stateicon {
+    font-size: 13rem;
+    color: #dcdcdc;
+}
+
+#stateicon:hover {
+    font-size: 13.5rem;
+    color: #f5f5f5;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    padding: 1rem;
+    height: 120px;
+    background-color: #f8f8f8;
+    display: flex;
+}
+
+.headerContent {
+    height: 120px;
+}
+
+.logo {
+    height: 120px;
+    background: url(logo.png) no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 300px;
+}
+
+.footer {
+    color: #f8f8f8;
+    height: 100px;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+}
+
+.brick {
+    height: 100px;
+    color: #f7f2f3;
+    text-align: left;
+    font-size: 0.7rem;
+    padding-left: 2rem;
+    display: flex;
+}
+
+.brickContent {
+    margin: auto;
+}
+
+.social {
+    font-size: 2rem;
+}
+
+.years {
+}
+
+.copyright {
+
+}
+
+.contacts {
+
+}
+
+.socialIcon {
+    color: #fbfbfb;
+}
+
+.socialIcon:hover {
+    color: #d5d5d5;
 }

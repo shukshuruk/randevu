@@ -1,7 +1,79 @@
-<!doctype html public="storage">
+<!doctype>
 <html>
 <meta charset=utf-8/>
-<title>My First React Router App</title>
-<link rel=stylesheet href=/index.css>
+<title>Радио Рандеву</title>
+<link rel=stylesheet href=index.css>
+<link rel="stylesheet" href="font-awesome.min.css">
+<!--<div id=app></div>-->
+<body>
+<!--<script src="/bundle.js"></script>-->
 <div id=app></div>
-<script src="/bundle.js"></script>
+<div class="wrapper">
+    <header class="header">
+        <div class="headerContent">
+            <div class="logo"></div>
+        </div>
+    </header>
+    <div class="content">
+        <audio id="randevu">
+            <source src="http://212.92.183.74:8370/;">
+            <!--<source src="http://uk3.internet-radio.com:8136/;">-->
+            Your browser does not support the audio element.
+        </audio>
+        <a href="javascript:void(0)" data-toggle="tooltip" title="Preview" class="stateicon"
+           onclick="aud_play_pause()"><i id="stateicon" class="fa fa-play-circle-o"></i></a>
+
+        <script>
+            function aud_play_pause() {
+                var myAudio = document.getElementById("randevu");
+                var stateIcon = document.getElementById('stateicon');
+                if (myAudio.paused) {
+                    stateIcon.classList.remove('fa-play-circle-o');
+                    stateIcon.classList.add('fa-pause-circle-o');
+                    myAudio.play();
+                } else {
+                    stateIcon.classList.add('fa-play-circle-o');
+                    stateIcon.classList.remove('fa-pause-circle-o');
+                    myAudio.pause();
+                }
+            }
+        </script>
+    </div>
+    <footer class="footer">
+        <div class="brick social">
+            <div class="brickContent">
+                <a href="https://www.facebook.com/RadioRandevu/"><i class="fa fa-facebook-square socialIcon"
+                                                                    aria-hidden="true"></i></a>
+                <a href="https://new.vk.com/radiorandevu"><i class="fa fa-vk socialIcon" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/randevuradio"><i class="fa fa-twitter socialIcon"
+                                                              aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="brick years">
+            <div class="brickContent">
+                © 1992 - 2015
+            </div>
+        </div>
+        <div class="brick contacts">
+            <div class="brickContent">
+                Радиостанция «Радио Рандеву»
+
+                603006 г. Нижний Новгород
+                ул. Семашко д. 37 оф. 201
+
+                Телефон рекламной службы +7 (831)-201-05-25
+            </div>
+        </div>
+        <div class="brick registration">
+            <div class="brickContent">
+                Свидетельство о регистрации СМИ
+                ЭЛ № ТУ52-00773 от 15 ноября 2012 г
+
+                Генеральный директор: Руслан Станчев,
+                Главный редактор: Валентина Тимонина
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
