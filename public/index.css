@@ -61,7 +61,7 @@ audio {
 }
 
 .footer {
-    color: #f8f8f8;
+    color: #999;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #2e2e2e;
@@ -73,7 +73,7 @@ audio {
 
 .brick {
     line-height: 0.5;
-    color: #f7f2f3;
+    color: #999;
     text-align: left;
     font-size: 0.7rem;
     padding-left: 2rem;
