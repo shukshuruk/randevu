@@ -26,7 +26,7 @@ audio {
     display: block;
     margin: auto;
     cursor: pointer;
-    height: 10rem;
+    height: 7rem;
 }
 
 #stateicon:hover {
