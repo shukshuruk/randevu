@@ -21,6 +21,10 @@ audio {
     margin: auto;
 }
 
+#titleImage {
+    max-width: 800px;
+}
+
 #stateicon {
     padding-top: 5rem;
     display: block;
